@@ -44,9 +44,10 @@ body {
 
 /* Players */
 main {
+ 
     display: flex;
-    justify-content: center;
-
+    align-items: center;
+    flex-direction: column;
 }
 
 main h2 {
@@ -55,21 +56,22 @@ main h2 {
     font-weight: 500;
 
 }
-
-.top {
+.container{
     background: #FFFFFF;
     border-radius: 5px;
     width: 870px;
     padding: 30px;
-   
 }
-
+.top{
+    padding-left: 30px;
+}
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
 }
-.top-players{
+
+.top-players {
     padding-bottom: 30px;
 }
 
@@ -90,7 +92,38 @@ main h2 {
     padding-left: 15px;
 }
 
-hr{
+hr {
     color: #D1D1D1;
     width: 807px;
+}
+
+.blogs {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-row-gap: 30px;
+grid-column-gap: 20px;
+    
+}
+
+.blogs h2 {
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 30px;
+}
+.blogs img{
+    width: 177px;
+height: 117px;
+}
+.blog{
+    display: flex;
+    gap: 30px;
+}
+.blogs h3{
+    font-weight: 500;
+font-size: 20px;
+}
+.blog div{
+    
+    align-items: flex-start;
 }
